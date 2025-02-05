@@ -57,12 +57,12 @@ const Nav = ({openNav}: Props) => {
             {/* {Login} */}
             <div className="flex items-center space-x-4">
                 {/* {Login button} */}
-                <div className="flex items-center cursor-pointer text-white hover:text-red-700 transition-all duration-200">
-                    <FaUserCircle className="w-5 h-5" />
-                    <p className="font-bold text-xs sm:text-base">
-                        Register / Login
-                    </p>
-                </div>
+                <Link href="/auth/signin/page" className="flex items-center cursor-pointer text-white hover:text-red-700 transition-all duration-200">
+    <FaUserCircle className="w-5 h-5" />
+    <p className="font-bold text-xs sm:text-base">
+        Register / Login
+    </p>
+</Link>
                 {/* {Burger menu} */}
                 <HiBars3BottomRight onClick={openNav} className="sm:w-8 sm:h=8 w-6 h-6 cursor-pointer text-white lg:hidden" />
 
