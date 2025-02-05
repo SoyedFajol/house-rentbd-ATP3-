@@ -12,12 +12,12 @@ export function middleware(request: NextRequest) {
   }
 
   if (token && isAuthPage) {
-    return NextResponse.redirect(new URL('/pages/Merchant/dashboard', request.url));
+    return NextResponse.redirect(new URL('/Merchant/dashboard', request.url));
   }
 
   return NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/auth/:path*', '/pages/Merchant/:path*']
+  matcher: ['/auth/:path*', '/Merchant/:path*']
 };
